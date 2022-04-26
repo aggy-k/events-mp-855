@@ -1,0 +1,7 @@
+<!--pages/eventsIndex/eventsIndex.wxml-->
+<view class="container">
+  <!-- iterate our events and show it here -->
+  <view wx:for="{{events}}" wx:for-item="event" wx:key="key">
+    <view>{{event.name}} - {{event.description}}</view>
+  </view>
+</view>
